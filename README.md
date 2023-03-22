@@ -7,8 +7,8 @@ Flutter SDK
 VS Code
 
 ---Instalación---
-Clona este repositorio: git clone 
-Navega a la carpeta del proyecto: cd dashfleet_app_prueba.
+Clona este repositorio: git clone https://github.com/SebastianCastro-8/DashFleet-App-Flutter.git
+Navega a la carpeta del proyecto: cd dashfleet_app_flutter.
 Ejecuta flutter pub get para instalar las dependencias.
 Ejecuta flutter run para iniciar la aplicación en modo de depuración.
 
