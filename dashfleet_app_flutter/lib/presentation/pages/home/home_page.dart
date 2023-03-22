@@ -6,8 +6,9 @@ import 'package:dashfleet_app_flutter/presentation/pages/home/layouts/finance.da
 import 'package:dashfleet_app_flutter/presentation/pages/home/layouts/home.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:line_icons/line_icons.dart';
 
-import '../../shared/widgets/constans.dart';
+import '../../shared/constans.dart';
 import 'home_controller.dart';
 import 'layouts/add.dart';
 import 'widgets/list_title_component.dart';
@@ -63,7 +64,7 @@ class _HomePageState extends State<HomePage> {
             decoration: BoxDecoration(
               color: Constans.ColorPrimario,
             ),
-            child: const Center(child: Text('Dashfllet Flutter')),
+            child: const Center(child: Text('Dashfllet Opciones')),
           ),
           ListTitleComponent(
             texto: "Add",
@@ -75,7 +76,7 @@ class _HomePageState extends State<HomePage> {
           ),
           ListTitleComponent(
             texto: "Home",
-            icon: Icons.home,
+            icon: LineIcons.home,
             onTap: () {
               _Controller.jumpToPage(1);
               scaffoldKey.currentState!.openDrawer();
@@ -83,7 +84,7 @@ class _HomePageState extends State<HomePage> {
           ),
           ListTitleComponent(
             texto: "Wallet",
-            icon: Icons.account_balance_wallet,
+            icon: LineIcons.wallet,
             onTap: () {
               _Controller.jumpToPage(2);
               scaffoldKey.currentState!.openDrawer();
@@ -91,7 +92,7 @@ class _HomePageState extends State<HomePage> {
           ),
           ListTitleComponent(
             texto: "Money",
-            icon: Icons.monetization_on,
+            icon: LineIcons.moneyBill,
             onTap: () {
               _Controller.jumpToPage(3);
               scaffoldKey.currentState!.openDrawer();
@@ -99,7 +100,7 @@ class _HomePageState extends State<HomePage> {
           ),
           ListTitleComponent(
             texto: "Settings",
-            icon: Icons.settings,
+            icon: LineIcons.alternatePencil,
             onTap: () {
               _Controller.jumpToPage(4);
               scaffoldKey.currentState!.openDrawer();
@@ -115,35 +116,35 @@ class _HomePageState extends State<HomePage> {
       items: const [
         BottomNavigationBarItem(
           icon: Icon(
-            Icons.add,
+            LineIcons.plus,
             color: Colors.black,
           ),
           label: '',
         ),
         BottomNavigationBarItem(
           icon: Icon(
-            Icons.home,
+            LineIcons.home,
             color: Colors.black,
           ),
           label: '',
         ),
         BottomNavigationBarItem(
           icon: Icon(
-            Icons.account_balance_wallet,
+            LineIcons.wallet,
             color: Colors.black,
           ),
           label: '',
         ),
         BottomNavigationBarItem(
           icon: Icon(
-            Icons.monetization_on,
+            LineIcons.moneyBill,
             color: Colors.black,
           ),
           label: '',
         ),
         BottomNavigationBarItem(
           icon: Icon(
-            Icons.settings,
+            LineIcons.alternatePencil,
             color: Colors.black,
           ),
           label: '',

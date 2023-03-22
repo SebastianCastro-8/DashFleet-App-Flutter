@@ -1,4 +1,4 @@
-import 'package:dashfleet_app_flutter/presentation/shared/widgets/constans.dart';
+import 'package:dashfleet_app_flutter/presentation/shared/constans.dart';
 import 'package:flutter/material.dart';
 
 class CheckBoxComponent extends StatefulWidget {

@@ -1,4 +1,4 @@
-import 'package:dashfleet_app_flutter/presentation/shared/widgets/constans.dart';
+import 'package:dashfleet_app_flutter/presentation/shared/constans.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../shared/widgets/check_box.dart';
@@ -103,7 +103,7 @@ class _LoginPageState extends State<LoginPage> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           const Text(
-            "Celular (ejemplo: 1234567890)",
+            "Celular 3246728300",
             style: TextStyle(
               fontWeight: FontWeight.bold,
             ),
@@ -111,10 +111,10 @@ class _LoginPageState extends State<LoginPage> {
           TextFieldComponent(
             controller: numberController,
             numero: true,
-            prefixText: "+1 ",
+            prefixText: "+57 ",
           ),
           const Text(
-            "Clave (ejmplo: 000000)",
+            "Clave 123456",
             style: TextStyle(
               fontWeight: FontWeight.bold,
             ),
@@ -146,7 +146,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
           ),
           Text(
-            "Login",
+            "Ingresar",
             style: TextStyle(
               fontWeight: FontWeight.bold,
               color: Colors.white,

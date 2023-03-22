@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 class ListTitleComponent extends StatefulWidget {
   final Function()? onTap;
   final String texto;
-
   final IconData? icon;
+
   const ListTitleComponent(
       {super.key,
       required this.texto,
@@ -31,9 +31,7 @@ class _ListTitleComponentState extends State<ListTitleComponent> {
           Text(widget.texto),
         ],
       ),
-      onTap: () {
-        widget.onTap;
-      },
+      onTap: widget.onTap,
     );
   }
 }

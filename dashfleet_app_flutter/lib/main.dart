@@ -20,9 +20,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Dashfleet app prueba',
-      // initialRoute: '/Login',
-      initialRoute: '/',
+      title: 'Dashfleet Flutter',
+      initialRoute: '/Login',      
       routes: {
         '/': (context) => const HomePage(),
         '/Login': (context) => const LoginPage(),

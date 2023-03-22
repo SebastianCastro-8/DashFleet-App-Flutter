@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "992090844900",
+    "project_id": "dashfleet-app-flutter",
+    "storage_bucket": "dashfleet-app-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992090844900:android:3dad4a2fb570a7b36b46f1",
+        "android_client_info": {
+          "package_name": "com.example.dashfleet_app_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "992090844900-90arse6s884tn65pmab666hoo35lf6l0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASTJ0xf56Hi0IoLHCDCeh4BoI5R7IiNAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "992090844900-90arse6s884tn65pmab666hoo35lf6l0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

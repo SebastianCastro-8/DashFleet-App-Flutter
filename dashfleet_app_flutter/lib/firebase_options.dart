@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -49,21 +46,30 @@ class DefaultFirebaseOptions {
     }
   }
 
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyCw-VZ2LAVKK_CwuBmFtjxpOmH3co08pqo',
+    appId: '1:992090844900:web:797d115a971ee3e46b46f1',
+    messagingSenderId: '992090844900',
+    projectId: 'dashfleet-app-flutter',
+    authDomain: 'dashfleet-app-flutter.firebaseapp.com',
+    storageBucket: 'dashfleet-app-flutter.appspot.com',
+  );
+
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBWWGmc2S4NlhF-DSUAX7K43F3_X703vws',
-    appId: '1:659140725485:android:470aee543992be0e1adae4',
-    messagingSenderId: '659140725485',
-    projectId: 'dashfleet-app-prueba',
-    storageBucket: 'dashfleet-app-prueba.appspot.com',
+    apiKey: 'AIzaSyASTJ0xf56Hi0IoLHCDCeh4BoI5R7IiNAc',
+    appId: '1:992090844900:android:3dad4a2fb570a7b36b46f1',
+    messagingSenderId: '992090844900',
+    projectId: 'dashfleet-app-flutter',
+    storageBucket: 'dashfleet-app-flutter.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDkUA43TIft197DDiIqVGXfIRvgBqd7G4g',
-    appId: '1:659140725485:ios:4794b12246b24ffb1adae4',
-    messagingSenderId: '659140725485',
-    projectId: 'dashfleet-app-prueba',
-    storageBucket: 'dashfleet-app-prueba.appspot.com',
-    iosClientId: '659140725485-355rp8j6vdaehqktnl50i1sm85fenoh0.apps.googleusercontent.com',
-    iosBundleId: 'com.example.dashfleetAppPrueba',
+    apiKey: 'AIzaSyBfawPp6fh7ixrzCDt7ZNf69OZU-Czjgmo',
+    appId: '1:992090844900:ios:05478b8987955d5f6b46f1',
+    messagingSenderId: '992090844900',
+    projectId: 'dashfleet-app-flutter',
+    storageBucket: 'dashfleet-app-flutter.appspot.com',
+    iosClientId: '992090844900-3q8o5tvdavleds11pnufjrk50tu1t97c.apps.googleusercontent.com',
+    iosBundleId: 'com.example.dashfleetAppFlutter',
   );
 }

@@ -3,7 +3,7 @@
 import 'package:dashfleet_app_flutter/presentation/pages/home/home_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../shared/widgets/constans.dart';
+import '../../../shared/constans.dart';
 
 class HeaderHome extends StatefulWidget {
   late GlobalKey <ScaffoldState> scaffolKey;

@@ -1,6 +1,7 @@
 // ignore_for_file: must_be_immutable
 
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icons.dart';
 import '../widgets/header.dart';
 
 class RutasLayout extends StatefulWidget {
@@ -16,8 +17,7 @@ class _RutasLayoutState extends State<RutasLayout> {
     "Ruta 1",
     "Ruta 2",
     "Ruta 3",
-    "Ruta 4",
-    "Ruta 5",
+    
   ];
 
   @override
@@ -50,33 +50,32 @@ class _RutasLayoutState extends State<RutasLayout> {
               shrinkWrap: true,
               itemCount: listRutas.length,
               itemBuilder: (context, i) {
-                return Row(
+                return Column(
                   children: [
-                    Column(children: const [
-                      Icon( Icons.route_sharp)
-                    ],),
-                    Column(
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            border: Border.all(
-                              color: Colors.grey,
-                              width: 1.0,
-                            ),
-                            borderRadius:
-                                BorderRadius.circular(8.0), // radio de borde de 8.0
-                          ),
-                          child: ListTile(
-                            title: Text(listRutas[i]),
-                            subtitle: Text("${i.toString()} Km"),
-                          ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        border: Border.all(
+                          color: Colors.grey,
+                          width: 1.0,
                         ),
-                        const SizedBox(
-                          height: 10,
-                        )
-                      ],
+                        borderRadius:
+                            BorderRadius.circular(8.0), // radio de borde de 8.0
+                      ),
+                      child: ListTile(
+                        title: Row(
+                          children: [
+                            Text(listRutas[i]),
+                            Expanded(child: Container()),
+                            const Icon(LineIcons.route),
+                          ],
+                        ),
+                        subtitle: Text("${i.toString()} Km"),
+                      ),
                     ),
+                    const SizedBox(
+                      height: 10,
+                    )
                   ],
                 );
               },
